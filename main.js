@@ -22,7 +22,6 @@ Array.from(imgs).forEach((img) => {
 });
 
 // lazy load imgs
-
 window.onload = () => {
   const observer = new IntersectionObserver(
     (entries, observer) => {
@@ -42,7 +41,7 @@ window.onload = () => {
 };
 
 /*==================== DARK LIGHT THEME ====================*/
-const themeButton = document.getElementById("theme-button");
+const themeButton = document.body.querySelector("#theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "bx-sun";
 
@@ -75,4 +74,22 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+//burger
+const burgerButton = document.body.querySelector(".header__burger-button");
+const header = document.querySelector(".header");
+
+burgerButton.addEventListener("click", (event) => {
+  document.querySelector(".header").classList.toggle("open");
+});
+
+document.body.addEventListener("click", (event) => {
+  if (
+    !event.target.classList.contains("header__burger-button") &&
+    !event.target.classList.contains(".header__mobile-body") &&
+    !event.target.closest("span")
+  ) {
+    header.classList.remove("open");
+  }
 });

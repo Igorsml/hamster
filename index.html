@@ -24,26 +24,31 @@
         <div class="header__logo">
           <a href="#" class="header__logo">Hamst</a>
           <!-- Theme cnahge button -->
-          <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
         </div>
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Условия</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Цены</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Акции</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Соц. сети</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="tel:+7(495) 123-45-67" class="header__phone" title="+7(495) 123-45-67">+7(495) 123-45-67</a>
-        <button class="header__call">Связаться</button>
+        <div class="header__mobile-body">
+          <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Условия</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Цены</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Соц. сети</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+7(495) 123-45-67" class="header__phone" title="+7(495) 123-45-67">+7(495) 123-45-67</a>
+          <button class="header__call">Связаться</button>
+        </div>
+        <button class="header__burger-button">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
     <main class="main _container">
@@ -74,6 +79,7 @@
               телефона для получения консультации и информации по
               аренде
             </p>
+            <img class="contact-form__img" src="./assets/img/hamster.png" alt="hamster">
             <form class="contact-form__body">
               <input type="tel" class="contact-form__input" inputmode="numeric" placeholder="Номер телефона"
                 name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="required">
@@ -85,7 +91,6 @@
             </form>
           </div>
         </div>
-        <img class="contact-form__img" src="./assets/img/hamster.png" alt="hamster">
       </section>
 
       <div class="ribbon__purple">
@@ -115,21 +120,19 @@
         <!-- <swiper-container class="mySwiper"> -->
         <div class="wheel-compare__body">
           <div class="wheel-compare__item-body plastic">
-            <div class="wheel-compare__item-body">
-              <img class="wheel-compare__item-img" data-src="./assets/img/plastic_wheel.png" alt="Пластиковое колесо">
-              <div class="wheel-compare__item-title">Пластик</div>
-              <div class="wheel-compare__description">Чтобы Ваш питомец всегда был в отличной физической форме, ему
-                просто необходимо бегать в таком колесе</div>
-              <div class="wheel-compare__price">От 99 руб / мес</div>
-              <a href="#" class="contact-form__button wheel-compare__link" target="_blank">Смотреть все<svg
-                  class="icon contact-form__button__arrow">
-                  <use xlink:href="#arrow"></use>
-                </svg></a>
-            </div>
+            <img class="wheel-compare__item-img" data-src="./assets/img/plastic_wheel.png" alt="Пластиковое колесо">
+            <div class="wheel-compare__item-title">Пластик</div>
+            <div class="wheel-compare__description">Чтобы Ваш питомец всегда был в отличной физической форме, ему
+              просто необходимо бегать в таком колесе</div>
+            <div class="wheel-compare__price">От 99 руб / мес</div>
+            <a href="#" class="contact-form__button wheel-compare__link" target="_blank">Смотреть все<svg
+                class="icon contact-form__button__arrow">
+                <use xlink:href="#arrow"></use>
+              </svg></a>
           </div>
 
           <div class="wheel-compare__item-body metal">
-            <img class="wheel-compare__item-img" data-src="./assets//img/metal_wheel.png" alt="Металлическое колесо">
+            <img class="wheel-compare__item-img" data-src="./assets/img/metal_wheel.png" alt="Металлическое колесо">
             <div class="wheel-compare__item-title">Металл</div>
             <div class="wheel-compare__description">Чтобы Ваш питомец всегда был в отличной физической форме,
               ему
@@ -157,8 +160,8 @@
       </section>
 
       <section class="why-we">
+        <h2 class="why-we__title">ПОЧЕМУ МЫ</h2>
         <div class="why-we__body">
-          <h2 class="why-we__title">ПОЧЕМУ МЫ</h2>
           <div class="why-we__item">
             <img class="why-we__icon" src="./assets/img/constructor.svg" alt="why whee icon" />
             <p>Сборка тренажеров бесплатно</p>
