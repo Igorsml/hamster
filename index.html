@@ -75,11 +75,11 @@
             </div>
           </ul>
           <div class="contact-form">
+            <img class="contact-form__img" src="./assets/img/hamster.png" alt="hamster">
             <p class="contact-form__description">Оставьте номер
               телефона для получения консультации и информации по
               аренде
             </p>
-            <img class="contact-form__img" src="./assets/img/hamster.png" alt="hamster">
             <form class="contact-form__body">
               <input type="tel" class="contact-form__input" inputmode="numeric" placeholder="Номер телефона"
                 name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="required">
@@ -118,43 +118,52 @@
       <section class="wheel-compare">
         <h2 class="wheel-compare__title">НАШИ ТРЕНАЖЕРЫ ИЗ ВЫСОКОКАЧЕСТВЕННЫХ МАТЕРИАЛОВ</h2>
         <!-- <swiper-container class="mySwiper"> -->
-        <div class="wheel-compare__body">
-          <div class="wheel-compare__item-body plastic">
-            <img class="wheel-compare__item-img" data-src="./assets/img/plastic_wheel.png" alt="Пластиковое колесо">
-            <div class="wheel-compare__item-title">Пластик</div>
-            <div class="wheel-compare__description">Чтобы Ваш питомец всегда был в отличной физической форме, ему
-              просто необходимо бегать в таком колесе</div>
-            <div class="wheel-compare__price">От 99 руб / мес</div>
-            <a href="#" class="contact-form__button wheel-compare__link" target="_blank">Смотреть все<svg
-                class="icon contact-form__button__arrow">
-                <use xlink:href="#arrow"></use>
-              </svg></a>
-          </div>
-
-          <div class="wheel-compare__item-body metal">
-            <img class="wheel-compare__item-img" data-src="./assets/img/metal_wheel.png" alt="Металлическое колесо">
-            <div class="wheel-compare__item-title">Металл</div>
-            <div class="wheel-compare__description">Чтобы Ваш питомец всегда был в отличной физической форме,
-              ему
-              просто необходимо бегать в таком колесе
+        <div class="wheel-compare__body swiper-container swiper-full-mobile">
+          <div class="swiper-wrapper">
+            <div class="wheel-compare__item-body plastic swiper-slide">
+              <img class="wheel-compare__item-img" src="./assets/img/plastic_wheel.png"
+                data-src="./assets/img/plastic_wheel.png" alt="Пластиковое колесо">
+              <div class="wheel-compare__item-title">Пластик</div>
+              <div class="wheel-compare__description">Чтобы Ваш питомец всегда был в отличной физической форме, ему
+                просто необходимо бегать в таком колесе</div>
+              <div class="wheel-compare__price">От 99 руб / мес</div>
+              <a href="#" class="contact-form__button wheel-compare__link" target="_blank">Смотреть все<svg
+                  class="icon contact-form__button__arrow">
+                  <use xlink:href="#arrow"></use>
+                </svg></a>
             </div>
-            <div class="wheel-compare__price">От 95 руб / мес</div>
-            <a href="#" class="contact-form__button wheel-compare__link metal-button" target="_blank">Смотреть все<svg
-                class="icon contact-form__button__arrow">
-                <use xlink:href="#arrow"></use>
-              </svg></a>
+
+            <div class="wheel-compare__item-body metal swiper-slide">
+              <img class="wheel-compare__item-img" src="./assets/img/metal_wheel.png"
+                data-src="./assets/img/metal_wheel.png" alt="Металлическое колесо">
+              <div class="wheel-compare__item-title">Металл</div>
+              <div class="wheel-compare__description">Чтобы Ваш питомец всегда был в отличной физической форме,
+                ему
+                просто необходимо бегать в таком колесе
+              </div>
+              <div class="wheel-compare__price">От 95 руб / мес</div>
+              <a href="#" class="contact-form__button wheel-compare__link metal-button" target="_blank">Смотреть
+                все<svg class="icon contact-form__button__arrow">
+                  <use xlink:href="#arrow"></use>
+                </svg></a>
+            </div>
+
+            <div class="wheel-compare__item-body wood swiper-slide">
+              <img class="wheel-compare__item-img" src="./assets/img/wood_wheel.png"
+                data-src="./assets/img/wood_wheel.png" alt="Деревянное колесо">
+              <div class="wheel-compare__item-title wood">Дерево</div>
+              <div class="wheel-compare__description wood">Колесо для хомяка деревянное поможет вашему питомцу
+                бороться
+                сожирением и даст возможность двигательной ...</div>
+              <div class="wheel-compare__price wood">От 85 руб / мес</div>
+              <a href="#" class="contact-form__button wheel-compare__link wood-button" target="_blank">Смотреть
+                все<svg class="icon contact-form__button__arrow">
+                  <use xlink:href="#arrow"></use>
+                </svg></a>
+            </div>
           </div>
-          <div class="wheel-compare__item-body wood">
-            <img class="wheel-compare__item-img" data-src="./assets/img/wood_wheel.png" alt="Деревянное колесо">
-            <div class="wheel-compare__item-title wood">Дерево</div>
-            <div class="wheel-compare__description wood">Колесо для хомяка деревянное поможет вашему питомцу бороться
-              сожирением и даст возможность двигательной ...</div>
-            <div class="wheel-compare__price wood">От 85 руб / мес</div>
-            <a href="#" class="contact-form__button wheel-compare__link wood-button" target="_blank">Смотреть все<svg
-                class="icon contact-form__button__arrow">
-                <use xlink:href="#arrow"></use>
-              </svg></a>
-          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
         <!-- </swiper-container> -->
       </section>
@@ -198,7 +207,8 @@
     </g>
   </svg>
   <!-- svg sprites end  -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
 </body>
 

@@ -1,18 +1,22 @@
-// const swiper = new Swiper(".swiper-container", {
-//   slidesPerView: "auto",
-//   spaceBetween: 20,
-//   cssMode: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//     type: "fraction",
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+var swiperMobile = new Swiper(".swiper-container.swiper-full-mobile", {
+  slidesPerView: "auto",
+  spaceBetween: 5,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+  //   autoplay: {
+  //     delay: 100000,
+  //   },
 
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+});
+
+// set alt from src
 const imgs = document.querySelectorAll("#img");
 
 Array.from(imgs).forEach((img) => {
@@ -40,7 +44,7 @@ window.onload = () => {
     .forEach((img) => observer.observe(img));
 };
 
-/*==================== DARK LIGHT THEME ====================*/
+// dark theme
 const themeButton = document.body.querySelector("#theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "bx-sun";
