@@ -23,6 +23,7 @@ src: url('/assets/fonts/NeueMachina-Black.woff2')
 --wheel-compare__button: #E8E8E8;
 --wheel-compare__item-title: #F2EBFC;
 --swiper-bullet: #191A1C;
+--why-we__benefit-icon: none;
 } 
 
 
@@ -44,6 +45,7 @@ body.dark-theme {
 --wheel-compare__button: #191A1C;
 --wheel-compare__item-title: #F2EBFC;     
 --swiper-bullet: #D9D9D9; 
+--why-we__benefit-icon: invert(94%) sepia(68%) saturate(6885%) hue-rotate(15deg) brightness(94%) contrast(108%);
 --body-color: radial-gradient(44.70% 27.43% at 7.14% 81.50%, rgba(183, 57, 163, 0.20) 5.94%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(82.96% 18.36% at 70.21% 15.39%, rgba(75, 57, 183, 0.25) 5.94%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(44.23% 41.37% at 67.29% 6.53%, rgba(150, 57, 183, 0.35) 2.08%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(82.09% 40.01% at -10.96% 19.71%, rgba(144, 56, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(25.11% 36.43% at 10.89% 52.04%, rgba(255, 18, 231, 0.20) 0%, rgba(13, 12, 16, 0.00) 100%), radial-gradient(32.94% 29.18% at 95.96% 111.00%, rgba(208, 51, 164, 0.30) 0%, rgba(16, 12, 12, 0.00) 100%), radial-gradient(27.13% 32.50% at 74.25% 40.98%, rgba(208, 51, 164, 0.30) 0%, rgba(16, 12, 12, 0.00) 100%), radial-gradient(26.26% 38.84% at 96.11% 34.38%, rgba(84, 148, 245, 0.30) 0%, rgba(116, 43, 189, 0.00) 100%), #0B0B0B;
 }
 
@@ -529,6 +531,10 @@ width: 36px;
 height: 36px;
 }
 
+.why-we__item img:nth-child(even) {
+  filter: var(--why-we__benefit-icon);
+}
+
 
 @media (max-width: 950px) {
 .bx {
@@ -755,4 +761,5 @@ height: 15px!important;
 .why-we__item:nth-last-child(1) {
   width: 180%;
 }
+
 }
