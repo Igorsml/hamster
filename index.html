@@ -13,8 +13,14 @@
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Inter:wght@400;600;700&family=Noto+Sans:wght@500&display=swapp"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" media="screen and (max-width: 600px)"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -75,7 +81,7 @@
             </div>
           </ul>
           <div class="contact-form">
-            <img class="contact-form__img" src="./assets/img/hamster.png" alt="hamster">
+            <!-- <img class="contact-form__img" src="./assets/img/hamster.png" alt="hamster"> -->
             <p class="contact-form__description">Оставьте номер
               телефона для получения консультации и информации по
               аренде
@@ -118,8 +124,8 @@
       <section class="wheel-compare">
         <h2 class="wheel-compare__title">НАШИ ТРЕНАЖЕРЫ ИЗ ВЫСОКОКАЧЕСТВЕННЫХ МАТЕРИАЛОВ</h2>
         <!-- <swiper-container class="mySwiper"> -->
-        <div class="wheel-compare__body swiper-container swiper-full-mobile">
-          <div class="swiper-wrapper">
+        <div class="swiper-container swiper-full-mobile">
+          <div class="wheel-compare__body swiper-wrapper">
             <div class="wheel-compare__item-body plastic swiper-slide">
               <img class="wheel-compare__item-img" src="./assets/img/plastic_wheel.png"
                 data-src="./assets/img/plastic_wheel.png" alt="Пластиковое колесо">
@@ -169,8 +175,8 @@
       </section>
 
       <section class="why-we">
-        <h2 class="why-we__title">ПОЧЕМУ МЫ</h2>
         <div class="why-we__body">
+          <h2 class="why-we__title">Почему мы</h2>
           <div class="why-we__item">
             <img class="why-we__icon" src="./assets/img/constructor.svg" alt="why whee icon" />
             <p>Сборка тренажеров бесплатно</p>
