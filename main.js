@@ -53,15 +53,12 @@ const iconTheme = "bx-sun";
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
-// We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "bx-moon" : "bx-sun";
 
-// We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );
@@ -70,12 +67,9 @@ if (selectedTheme) {
   );
 }
 
-// Activate / deactivate the theme manually with the button
 themeButton.addEventListener("click", () => {
-  // Add or remove the dark / icon theme
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
@@ -91,7 +85,7 @@ burgerButton.addEventListener("click", (event) => {
 document.body.addEventListener("click", (event) => {
   if (
     !event.target.classList.contains("header__burger-button") &&
-    !event.target.classList.contains(".header__mobile-body") &&
+    !event.target.classList.contains(".header__phone-body") &&
     !event.target.closest("span")
   ) {
     header.classList.remove("open");
