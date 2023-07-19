@@ -10,7 +10,7 @@
 - ECO / BIO / GMO & Gluten free;
 - Не выделяют формальдегидов, без тяжелых металлов;
 - Пожизненная гарантия;
-- 
+
 
 ![Illustrations.png](https://sun9-5.userapi.com/impg/9Ysi6Z2ObJD6YFszZ0O3fZwXGCX3-UVaxAylTg/qP3JlkC9IEM.jpg?size=343x343&quality=95&sign=6a949f4e9ac697b35a66b07e464e5714&type=album)
 
