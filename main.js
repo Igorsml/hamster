@@ -6,9 +6,6 @@ var swiperMobile = new Swiper(".swiper-container.swiper-full-mobile", {
     clickable: true,
   },
   loop: true,
-  //   autoplay: {
-  //     delay: 100000,
-  //   },
 
   keyboard: {
     enabled: true,
@@ -25,7 +22,7 @@ Array.from(imgs).forEach((img) => {
   }
 });
 
-// lazy load imgs
+// lazy load imgs with data-src
 window.onload = () => {
   const observer = new IntersectionObserver(
     (entries, observer) => {
@@ -49,7 +46,6 @@ const themeButton = document.body.querySelector("#theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "bx-sun";
 
-// Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
