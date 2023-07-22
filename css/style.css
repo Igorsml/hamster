@@ -37,6 +37,7 @@
 	--contact-button-text: #ECE4F6;
 	--contact-form__input-text: #161616;
 	--metal-button: #E8E8E8;
+	--metal-button-text: #000000;
 	--contact-title: #572596;
 	--wheel-compare__body: #161616;
 	--wheel-compare__body-color: rgba(255, 255, 255, 0.90);
@@ -48,7 +49,7 @@
 }
 
 body {
-	font-family: 'Exo 2', 'Arial', sans-serif;
+  font-family: 'Exo 2', 'Arial', sans-serif;
 	background: var(--body-color);
 }
 
@@ -60,6 +61,8 @@ body.dark-theme {
 	--contact-button: #B9FA00;
 	--contact-button-text: #1A2204;
 	--contact-title: #B985FB;
+  --metal-button: #191A1C;
+  --metal-button-text: #FFFFFF;
 	--wheel-compare__body: #AEB1BA;
 	--wheel-compare__body-color: rgba(0, 0, 0, 0.90);
 	--wheel-compare__body-color-metal: #AEB1BA;
@@ -616,6 +619,7 @@ textarea {
 
 .plastic__button { 
   background: var(--contact-button__plastic);
+  color: #1A2204;
 }
 
 .wheel-compare__body {
@@ -683,6 +687,15 @@ textarea {
 .wood-button {
 	background: #732AD1;
 	color: #F3EBFE;
+}
+
+.metal-button {
+  background-color: var(--metal-button);
+  color: var(--metal-button-text);
+}
+
+.metal-button svg {
+  fill: var(--metal-button-text);
 }
 
 .metal-button:active {
