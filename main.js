@@ -1,4 +1,20 @@
-var swiperMobile = new Swiper(".swiper-container.swiper-full-mobile", {
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((item) => {
+    const windowHeight = window.innerHeight;
+    const revealTop = item.getBoundingClientRect().top;
+    const revealPoint = 150;
+
+    revealTop < windowHeight - revealPoint
+      ? item.classList.toggle("active")
+      : item.classList.remove("active");
+  });
+}
+
+const swiperMobile = new Swiper(".swiper-container.swiper-full-mobile", {
   slidesPerView: "auto",
   spaceBetween: 5,
   pagination: {
